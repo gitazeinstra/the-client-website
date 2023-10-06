@@ -7,7 +7,8 @@
     --round-corners: 8px;
     --grey: #fafafa;
     --light-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
-    --color-transition:  all 0.3s ease 0s;
+    --color-transition:  all 300ms ease 0s;
+    --background-transition: background-color 400ms ease 0s;
 }
 
 * {
@@ -18,7 +19,19 @@
     font-family: var(--body-font);
 }
 
-header {
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 6rem;
+    background-color: transparent;
+    transition: var(--background-transition);
+}
+
+.sticky {
     position: sticky;
     top: 0;
     display: flex;
@@ -28,7 +41,7 @@ header {
     box-shadow: var(--light-shadow);
     height: 6rem;
     background-color: #fff;
-    margin-top: -6rem;
+    transition: var(--background-transition);
 }
 
 .logo{
@@ -85,6 +98,7 @@ section {
     background-color: var(--grey);
     display: flex;
     justify-content: center;
+    margin-top: -6rem;
 
 }
 
