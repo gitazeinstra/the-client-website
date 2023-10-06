@@ -3,8 +3,9 @@ window.addEventListener('scroll', function () {
     const scrollTop = window.scrollY;
 
     if (scrollTop > 60) { // You can adjust this value to determine when the navbar becomes sticky
-        navbar.classList.add('sticky');
+        navbar.classList.add('solid');
     } else {
-        navbar.classList.remove('sticky');
+        navbar.classList.remove('solid');
     }
 });
+
