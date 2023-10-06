@@ -1,8 +1,10 @@
 :root {
     --lightblue: #7faec5;
     --green: #4ecd5d;
+    --darker-green: #47b654;
     --darkblue: #384b61;
     --body-font: 'Open Sans', sans-serif;
+    --round-corners: 8px;
 }
 
 * {
@@ -35,12 +37,25 @@ header {
 /*Navbar*/
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 nav li {
     list-style: none;
     display: inline-block;
     padding: 0 20px;
+}
+
+nav li:last-child a:last-child {
+    background-color: var(--green);
+    border-radius: var(--round-corners);
+    padding: 1rem;
+    color: #fff;
+    transition: 500ms ease-out;
+}
+
+nav li:last-child:hover a:last-child:hover {
+    background-color: var(--darker-green);
 }
 
 nav a {
