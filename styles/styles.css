@@ -1,36 +1,57 @@
+:root {
+    --lightblue: #7faec5;
+    --green: #4ecd5d;
+    --darkblue: #384b61;
+    --body-font: 'Open Sans', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: var(--body-font);
 }
 
-ul {
-    list-style-type: none;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+    height: 6rem
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
-
 }
 
-li {
-    float: left;
+.logo img {
+    width: 8rem;
 }
 
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+/*Navbar*/
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav a {
     text-decoration: none;
-    font-size: 2em;
+    color: var(--lightblue);
+    transition: all 0.3s ease 0s;
+    font-size: 1.6rem;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: green;
+nav a:hover {
+    color: var(--green);
 }
 
 section {
@@ -39,3 +60,18 @@ section {
     height: 45em;
 }
 
+@media  screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-navbar-icon .bar
+    {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        background: var(--darkblue);
+        border-radius: 3px;
+    }
+}
