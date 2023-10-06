@@ -1,12 +1,13 @@
 :root {
     --lightblue: #7faec5;
     --green: #4ecd5d;
-    --darker-green: #47b654;
     --darkblue: #384b61;
     --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif;
     --round-corners: 8px;
     --grey: #fafafa;
     --light-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    --color-transition:  all 0.3s ease 0s;
 }
 
 * {
@@ -27,6 +28,7 @@ header {
     box-shadow: var(--light-shadow);
     height: 6rem;
     background-color: #fff;
+    margin-top: -6rem;
 }
 
 .logo{
@@ -60,13 +62,13 @@ nav li:last-child a:last-child {
 }
 
 nav li:last-child:hover a:last-child:hover {
-    background-color: var(--darker-green);
+    background: var(--darkblue);
 }
 
 nav a {
     text-decoration: none;
     color: var(--lightblue);
-    transition: all 0.3s ease 0s;
+    transition: var(--color-transition);
     font-size: 1.6rem;
 }
 
@@ -76,12 +78,62 @@ nav a:hover {
 
 section {
     width: 100%;
-    height: 45em;
+    height: 100vh;
 }
 
 #home {
     background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+
 }
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction h1 {
+    font-size: 5rem;
+    color: var(--darkblue);
+    font-family: var(--title-font);
+}
+
+.introduction p {
+    font-size: 2rem;
+    color: var(--lightblue);
+    font-family: var(--title-font);
+    font-weight: 600;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.introduction a {
+    display: flex;
+    background-color: var(--green);
+    border-radius: var(--round-corners);
+    font-family: var(--title-font);
+    color: #fff;
+    transition: var(--color-transition);
+    width: 10rem;
+    height: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction a:hover {
+    background: var(--darkblue);
+}
+
 
 @media  screen and (max-width: 700px) {
     nav {
