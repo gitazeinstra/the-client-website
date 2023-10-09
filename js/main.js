@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 1200,
+})
+
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     const scrollTop = window.scrollY;
