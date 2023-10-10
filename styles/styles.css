@@ -4,6 +4,7 @@
     --darkblue: #384b61;
     --body-font: 'Open Sans', sans-serif;
     --title-font: 'Raleway', sans-serif;
+    --sharp-corners: 5px;
     --round-corners: 8px;
     --extra-round-corners: 20px;
     --grey: #fafafa;
@@ -13,8 +14,10 @@
     --background-transition: background-color 400ms ease 0s;
     --section-title: 3rem;
     --section-subtitle: 2rem;
+    --small-subtitle: 1.8rem;
     --article-title: 2.5rem;
     --section-p: 1.3rem;
+    --smaller-font-size: 1.2rem;
     --alinea: 20px;
 }
 
@@ -276,6 +279,7 @@ section:nth-child(odd) {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    height: 110vh;
 }
 
 .app-wrapper {
@@ -292,8 +296,6 @@ section:nth-child(odd) {
 #app img {
     width: 20rem;
     height: 40rem;
-    margin-top: 5rem;
-
 }
 
 #app h2 {
@@ -303,6 +305,57 @@ section:nth-child(odd) {
 
 #app p {
     font-size: var(--section-p);
+}
+
+/*ervaringen section*/
+#ervaringen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#ervaringen h2 {
+    font-size: var(--section-title);
+    color: var(--lightblue);
+}
+
+.review-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#ervaringen article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23rem;
+    height: 26rem;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: var(--sharp-corners);
+    box-shadow: var(--article-shadow);
+}
+
+.review-wrapper h3 {
+    font-size: var(--small-subtitle);
+    color: var(--darkblue);
+    margin-bottom: 10px;
+}
+
+.review-wrapper p {
+    font-size: var(--smaller-font-size);
+}
+
+.review-wrapper p:nth-of-type(2) {
+    border-top: 5px solid var(--green);
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 1rem;
+    color: var(--darkblue);
+    font-weight: 600;
 }
 
 @media  screen and (max-width: 700px) {
@@ -322,9 +375,16 @@ section:nth-child(odd) {
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1600px) {
     #project {
-        height: 100vw;
-        margin-top: 0;
+        height: 100vh;
+    }
+
+    #project h2 {
+        margin-top: 15rem;
+    }
+
+    #app {
+        height: 100vh;
     }
 }
