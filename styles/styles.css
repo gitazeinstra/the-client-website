@@ -409,9 +409,29 @@ section:nth-child(odd) {
 /*contact section*/
 #contact {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 70vh;
+}
+
+#contact h2,
+#contact h3 {
+    font-size: var(--article-title);
+    color: var(--darkblue);
+    margin-bottom: 30px;
+}
+
+#contact h4 {
+    font-size: var(--article-title);
+    color: var(--lightblue);
+    margin-bottom: 10px;
+}
+
+#contact a {
+    font-size: var(--large-p);
+    color: var(--p-color);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 
