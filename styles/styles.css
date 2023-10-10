@@ -194,7 +194,7 @@ section:nth-child(odd) {
 #welkom h3 {
     font-size: var(--section-subtitle);
     color: var(--darkblue);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 #welkom p {
@@ -269,6 +269,42 @@ section:nth-child(odd) {
     margin-bottom: var(--alinea);
 }
 
+/* app sectie */
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--alinea);
+    width: 40rem;
+}
+
+.app-text-wrapper p{
+    margin-bottom: var(--alinea);
+}
+
+#app img {
+    width: 20rem;
+    height: 40rem;
+    margin-top: 5rem;
+
+}
+
+#app h2 {
+    font-size: var(--section-title);
+    color: var(--lightblue);
+}
+
+#app p {
+    font-size: var(--section-p);
+}
+
 @media  screen and (max-width: 700px) {
     nav {
         display: none;
@@ -283,5 +319,12 @@ section:nth-child(odd) {
         background: var(--darkblue);
         box-shadow: var(--light-shadow);
         border-radius: 3px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #project {
+        height: 100vw;
+        margin-top: 0;
     }
 }
