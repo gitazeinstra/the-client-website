@@ -2,6 +2,7 @@
     --lightblue: #7faec5;
     --green: #4ecd5d;
     --darkblue: #384b61;
+    --p-color: #446867;
     --body-font: 'Open Sans', sans-serif;
     --title-font: 'Raleway', sans-serif;
     --sharp-corners: 5px;
@@ -9,14 +10,15 @@
     --extra-round-corners: 20px;
     --grey: #fafafa;
     --light-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
-    --article-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;;
-    --color-transition:  all 300ms ease 0s;
+    --article-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    --color-transition: all 300ms ease 0s;
     --background-transition: background-color 400ms ease 0s;
     --section-title: 3rem;
     --section-subtitle: 2rem;
     --small-subtitle: 1.8rem;
     --article-title: 2.5rem;
     --section-p: 1.3rem;
+    --large-p: 1.5rem;
     --smaller-font-size: 1.2rem;
     --alinea: 20px;
 }
@@ -27,6 +29,10 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: var(--body-font);
+}
+
+p {
+    color: var(--p-color);
 }
 
 /* transparante navbar */
@@ -158,11 +164,11 @@ section:nth-child(odd) {
 
 .introduction a {
     display: flex;
+    transition: var(--color-transition);
     background-color: var(--green);
     border-radius: var(--round-corners);
     font-family: var(--title-font);
     color: #fff;
-    transition: var(--color-transition);
     width: 10rem;
     height: 3rem;
     text-decoration: none;
@@ -357,6 +363,57 @@ section:nth-child(odd) {
     color: var(--darkblue);
     font-weight: 600;
 }
+
+#over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.over-wrapper {
+    width: 50rem;
+}
+
+.over-wrapper h2 {
+    font-size: var(--section-title);
+    color: var(--lightblue);
+}
+
+.over-wrapper p {
+    margin-top: 20px;
+    font-size: var(--large-p);
+}
+
+.over-wrapper a {
+    display: flex;
+    background-color: var(--green);
+    border-radius: var(--round-corners);
+    font-family: var(--title-font);
+    color: #fff;
+    transition: var(--color-transition);
+    width: 12rem;
+    height: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.over-wrapper a:hover {
+    background: var(--darkblue);
+}
+
+/*contact section*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media  screen and (max-width: 700px) {
     nav {
