@@ -19,6 +19,7 @@
     --small-subtitle: 1.8rem;
     --article-title: 2.5rem;
     --small-p: 1.3rem;
+    --smaller-p: 1.25rem;
     --large-p: 1.5rem;
     --smaller-font-size: 1.2rem;
     --alinea: 20px;
@@ -273,10 +274,8 @@ section:nth-child(odd) {
 
 #project article p {
     font-size: var(--small-p);
-}
-
-#project article p{
     margin-bottom: var(--alinea);
+
 }
 
 /* app sectie */
@@ -334,7 +333,7 @@ section:nth-child(odd) {
     gap: 50px;
 }
 
-#ervaringen article {
+#ervaringen blockquote {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -514,6 +513,11 @@ footer a {
         display: none;
     }
 
+    .mobile-navbar-icon {
+        border: none;
+        background-color: transparent;
+    }
+
     .mobile-navbar-icon .bar
     {
         display: block;
@@ -524,6 +528,93 @@ footer a {
         box-shadow: var(--light-shadow);
         border-radius: 3px;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    #welkom {
+        gap: 80px;
+    }
+
+    #welkom img {
+        width: 20rem;
+        height: 30rem;
+    }
+
+    #welkom h2 {
+        margin-bottom: 2px;
+    }
+
+    #welkom h3 {
+        margin-bottom: 3px;
+    }
+
+    #welkom p {
+        font-size: var(--smaller-p);
+    }
+
+    #project {
+        height: 225vh;
+    }
+
+    .project-wrapper {
+        gap: 40px;
+    }
+
+    .project-wrapper article:nth-of-type(1){
+        width: 35rem;
+    }
+
+    .waarom-card {
+        background-color: #fff;
+        height: 40rem;
+        width: 85rem;
+        text-align: center;
+        padding: 100px;
+        box-shadow: var(--article-shadow);
+    }
+
+    #project img {
+        height: 30rem;
+    }
+
+    #project article p {
+        font-size: var(--smaller-p);
+        margin-bottom: 10px;
+    }
+
+    #project h2 {
+        margin-top: 7rem;
+    }
+
+    #project article h3 {
+        font-size: var(--small-subtitle);
+    }
+
+    .waarom-card {
+        height: 45rem;
+        width: 60rem;
+        padding: 100px;
+    }
+
+    #app {
+        gap: 45px;
+        height: 100vh;
+    }
+
+    #app img {
+        width: 15rem;
+        height: 30rem;
+    }
+
+    #ervaringen article {
+        height: 23rem;
+        width: 19rem;
+    }
+
+    .review-wrapper h3 {
+        font-size: var(--small-subtitle);
+    }
+
 }
 
 @media screen and (min-width: 1600px) {
