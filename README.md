@@ -11,6 +11,8 @@ b-RAIN is een project van SPATwater om waterspilling tegen te gaan en water kwal
 ## Beschrijving
 Voor b-RAIN maak ik een website met informatie over het project. De bedoeling is dat de website de huisstijl van SPATwater krijgt, zodat je ziet dat het een project van SPATwater is. De website moet de aandacht trekken van investeerders en potientiële klanten. Het moet een interactieve website worden die het project op een leuke manier presenteert. Ook moet er een optie zijn om makkelijk contact op te nemen met SPATwater. 
 
+![b-rain_sreenshot](https://github.com/gitazeinstra/the-client-website/assets/40466580/1dd8402e-d06c-4d28-9a2c-5f191ef54cc6)
+
 **Link naar de website**\
 [🔗gitazeinstra.github.io/the-client-website/](https://gitazeinstra.github.io/the-client-website/)
 
